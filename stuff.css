@@ -1,5 +1,5 @@
 body {
-  background: #309;
+  background: #207;
   color: #fc0;
   text-align: center;
   font-family: sans-serif;
@@ -10,17 +10,27 @@ table {
   border-collapse: collapse;
   margin: 10px auto;
   max-width: 50em;
+  width: 100%;
 }
 
 th, td {
   border-width: 1px;
   border-style: dashed solid;
-  border-color: #51c #fc0;
+  border-color: #41a #fc0;
   padding: 3px 10px;
 }
 
-td:first-child {
+td:first-child,
+th:first-child {
   white-space: nowrap;
-  font-size: .8em;
-  padding: 1px;
+  font-size: 2em;
+  padding-left: 0;
+  border-left: 0;
+  width: 1.5em;
+  text-align: left;
+}
+
+td:first-child em {
+    font-size: .5em;
+    font-style: normal;
 }
