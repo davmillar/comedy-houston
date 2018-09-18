@@ -8,11 +8,18 @@ body {
 
 table {
   border-collapse: collapse;
+  margin: 10px auto;
+  max-width: 50em;
 }
 
 th, td {
   border-width: 1px;
   border-style: dashed solid;
   border-color: #51c #fc0;
-  padding: 3px;
+  padding: 3px 10px;
+}
+
+td:first-child {
+  white-space: nowrap;
+  font-size: .8em;
 }
