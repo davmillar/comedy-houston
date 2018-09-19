@@ -1,0 +1,15 @@
+{
+    "name": "DFW Comedy Open Mics",
+    "short_name": "DFW Mics",
+    "lang": "en-US",
+    "start_url": "/?utm_source=web_app_manifest",
+    "display": "standalone",
+    "background_color": "#220077",
+    "theme_color": "#220077",
+    "icons": [
+        {
+            "src": "logo.svg",
+            "type": "image/svg"
+        }
+    ]
+}
