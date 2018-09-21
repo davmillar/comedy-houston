@@ -34,3 +34,9 @@ td:first-child em {
     font-size: .5em;
     font-style: normal;
 }
+
+a {
+    text-decoration: none;
+    color: #fd3;
+    border-bottom: 1px dashed #41a;
+}
