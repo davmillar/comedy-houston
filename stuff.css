@@ -34,3 +34,26 @@ td:first-child em {
     font-size: .5em;
     font-style: normal;
 }
+
+a {
+    color: #fd3;
+}
+
+p a {
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px dashed #41a;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.light {
+    font-size: .8em;
+    display: inline-block;
+    background: #fc0;
+    color: #207;
+    padding: .1em .4em;
+    border-radius: .2em;
+}
