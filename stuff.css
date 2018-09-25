@@ -1,6 +1,6 @@
 body {
-  background: #207;
-  color: #fc0;
+  background: #013;
+  color: #6ef;
   text-align: center;
   font-family: sans-serif;
   font-size: 12px;
@@ -14,10 +14,11 @@ table {
 }
 
 th, td {
-  border-width: 1px;
+  border-width: 1px 1px 0 0;
   border-style: dashed solid;
-  border-color: #41a #fc0;
-  padding: 3px 10px;
+  border-color: #66eeff1a #6ef;
+  padding: 3px 10px 8px;
+  vertical-align: top;
 }
 
 td:first-child,
@@ -25,7 +26,6 @@ th:first-child {
   white-space: nowrap;
   font-size: 2em;
   padding-left: 0;
-  border-left: 0;
   width: 1.5em;
   text-align: left;
 }
@@ -36,13 +36,13 @@ td:first-child em {
 }
 
 a {
-    color: #fd3;
+    color: #9ff;
 }
 
 p a {
     text-decoration: none;
     display: inline-block;
-    border-bottom: 1px dashed #41a;
+    border-bottom: 1px dashed #66eeff1a;
 }
 
 p {
@@ -52,8 +52,8 @@ p {
 .light {
     font-size: .8em;
     display: inline-block;
-    background: #fc0;
-    color: #207;
+    background: #6ef;
+    color: #013;
     padding: .1em .4em;
     border-radius: .2em;
 }
