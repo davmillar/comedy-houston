@@ -37,12 +37,12 @@ td:first-child em {
 
 a {
     color: #9ff;
+    text-decoration: none;
+    border-bottom: 1px dashed #66eeff1a;
 }
 
 p a {
-    text-decoration: none;
     display: inline-block;
-    border-bottom: 1px dashed #66eeff1a;
 }
 
 p {
