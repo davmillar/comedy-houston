@@ -22,7 +22,7 @@ table {
 th, td {
   border-width: 1px 1px 0 0;
   border-style: dashed solid;
-  border-color: #66eeff1a #6ef;
+  border-color: #133958 #6ef;
   padding: 3px 10px 8px;
   vertical-align: top;
 }
@@ -44,7 +44,7 @@ td:first-child em {
 a {
     color: #9ff;
     text-decoration: none;
-    border-bottom: 1px dashed #66eeff1a;
+    border-bottom: 1px dashed #133958;
 }
 
 p a {
