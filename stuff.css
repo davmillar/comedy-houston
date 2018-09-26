@@ -6,6 +6,12 @@ body {
   font-size: 12px;
 }
 
+h2::before {
+    content: "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥";
+    margin: 2em auto;
+    display: block;
+}
+
 table {
   border-collapse: collapse;
   margin: 10px auto;
