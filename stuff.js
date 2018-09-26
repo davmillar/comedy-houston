@@ -6,7 +6,7 @@
         for (var i = 0; i < count; i++) {
             if (links[i].href.indexOf('geo:') > -1) {
                 let latLng = links[i].href.substring(4);
-                let venueName = links[i].innerText.replace(/\s/g, '+');
+                let venueName = encodeURIComponent(links[i].innerText);
                 links[i].href = 'http://maps.apple.com/?daddr=' + venueName + '&near=' + latLng;
             }
         }
