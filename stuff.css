@@ -32,13 +32,17 @@ th:first-child {
   white-space: nowrap;
   font-size: 2em;
   padding-left: 0;
-  width: 1.5em;
+  width: 1.3em;
   text-align: left;
+  line-height: 1;
 }
 
 td:first-child em {
     font-size: .5em;
     font-style: normal;
+    vertical-align: text-top;
+    position: relative;
+    top: 0.15em;
 }
 
 a {
