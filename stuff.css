@@ -55,11 +55,19 @@ p {
     line-height: 1.8;
 }
 
-.light {
+.light, .info {
     font-size: .8em;
     display: inline-block;
-    background: #6ef;
-    color: #013;
     padding: .1em .4em;
     border-radius: .2em;
+}
+
+.light {
+    background: #6ef;
+    color: #013;
+}
+
+.info {
+    background: #fe6;
+    color: #310;
 }
