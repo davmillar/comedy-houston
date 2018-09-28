@@ -8,7 +8,7 @@
             let latLng = links[i].href.substring(4);
             let venueName = encodeURIComponent(links[i].innerText);
             if (userAgent.match(/iPad|iPhone|iPod/ig)) {
-                links[i].href = 'maps:' + latLng + '?q=' + venueName;
+                links[i].href = 'maps:?q=' + venueName;
             } else if (userAgent.match(/android/ig)) {
                 links[i].href = links[i].href + '?q=' + latLng + '(' + venueName + ')';
             } else {
