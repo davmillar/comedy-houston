@@ -6,13 +6,13 @@
     for (var i = 0; i < count; i++) {
         if (links[i].href.indexOf('geo:') > -1) {
             let latLng = links[i].href.substring(4);
-            let venueName = encodeURIComponent(links[i].innerText);
+            let address = links[i].dataset.address;
             if (userAgent.match(/iPad|iPhone|iPod/ig)) {
-                links[i].href = 'maps:?q=' + venueName;
+                links[i].href = 'maps:?q=' + address;
             } else if (userAgent.match(/android/ig)) {
-                links[i].href = links[i].href + '?q=' + latLng + '(' + venueName + ')';
+                links[i].href = links[i].href + '?q=' + latLng + '(' + address + ')';
             } else {
-                links[i].href = 'https://www.openstreetmap.org/search?query=' + venueName + '#map=14/' + latLng;
+                links[i].href = 'https://www.openstreetmap.org/search?query=' + address + '#map=14/' + latLng;
             }
         }
     }
