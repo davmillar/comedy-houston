@@ -1,6 +1,29 @@
+:root {
+    --primary-hue: 220;
+    --secondary-hue: 187;
+    --primary-lightness: 10%;
+    --secondary-lightness: 70%;
+    --primary: hsl(
+            var(--primary-hue),
+            100%,
+            var(--primary-lightness)
+        );
+    --secondary: hsl(
+            var(--secondary-hue),
+            100%,
+            var(--secondary-lightness)
+        );
+    --border-color: hsla(
+            var(--secondary-hue),
+            100%,
+            var(--secondary-lightness),
+            0.15
+        );
+}
+
 body {
-  background: #013;
-  color: #6ef;
+  background: var(--primary);
+  color: var(--secondary);
   text-align: center;
   font-family: sans-serif;
   font-size: 12px;
@@ -8,6 +31,7 @@ body {
 
 h2::before {
     content: "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥";
+    color: #fc0;
     margin: 2em auto;
     display: block;
 }
@@ -22,7 +46,7 @@ table {
 th, td {
   border-width: 1px 1px 0 0;
   border-style: dashed solid;
-  border-color: #133958 #6ef;
+  border-color: var(--border-color) var(--secondary);
   padding: 3px 10px 8px;
   vertical-align: top;
 }
@@ -48,7 +72,7 @@ td:first-child em {
 a {
     color: #9ff;
     text-decoration: none;
-    border-bottom: 1px dashed #133958;
+    border-bottom: 1px dashed var(--border-color);
 }
 
 p a {
@@ -67,11 +91,19 @@ p {
 }
 
 .light {
-    background: #6ef;
-    color: #013;
+    background: var(--secondary);
+    color: var(--primary);
 }
 
 .info {
-    background: #fe6;
-    color: #310;
+    background: hsl(
+            calc(var(--secondary-hue) + 210),
+            100%,
+            var(--primary-lightness)
+        );
+    color: hsl(
+            calc(var(--secondary-hue) + 210),
+            100%,
+            var(--secondary-lightness)
+        );
 }
