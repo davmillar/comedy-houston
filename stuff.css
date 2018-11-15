@@ -107,3 +107,20 @@ p {
             var(--secondary-lightness)
         );
 }
+
+.hiatus {
+    background: hsl(0, 100%, var(--primary-lightness));
+    color: hsl(0, 100%, var(--secondary-lightness));
+    text-decoration: line-through;
+}
+
+.hiatus .info,
+.hiatus .light {
+    color: hsl(0, 100%, var(--primary-lightness));
+    background: hsl(0, 100%, var(--secondary-lightness));
+    text-decoration: none;
+}
+
+.hiatus .light {
+    opacity: .4;
+}
