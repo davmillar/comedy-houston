@@ -124,3 +124,7 @@ p {
 .hiatus .light {
     opacity: .4;
 }
+
+.hiatus a {
+    color: inherit;
+}
