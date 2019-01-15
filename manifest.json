@@ -10,6 +10,10 @@
         {
             "src": "logo.svg",
             "type": "image/svg"
+        },
+        {
+            "src": "logo.png",
+            "type": "image/png"
         }
     ]
 }
