@@ -7,7 +7,9 @@ var me = self,
         '/index.html',
         '/stuff.css',
         '/stuff.js',
-        '/manifest.json'
+        '/manifest.json',
+        '/icon.svg',
+        '/icon.png'
     ];
 
 me.addEventListener('install', function(event) {
