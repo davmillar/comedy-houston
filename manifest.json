@@ -4,16 +4,18 @@
     "lang": "en-US",
     "start_url": "/?utm_source=web_app_manifest",
     "display": "standalone",
-    "background_color": "#220077",
-    "theme_color": "#220077",
+    "background_color": "#001133",
+    "theme_color": "#001133",
     "icons": [
         {
             "src": "logo.svg",
-            "type": "image/svg"
+            "type": "image/svg",
+            "sizes": "192x192"
         },
         {
             "src": "logo.png",
-            "type": "image/png"
+            "type": "image/png",
+            "sizes": "192x192"
         }
     ]
 }
