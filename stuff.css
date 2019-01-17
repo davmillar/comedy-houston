@@ -27,6 +27,7 @@ body {
   text-align: center;
   font-family: sans-serif;
   font-size: 12px;
+  padding-bottom: 3.5em;
 }
 
 h2::before {
@@ -34,6 +35,24 @@ h2::before {
     color: #fc0;
     margin: 2em auto;
     display: block;
+}
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer a {
+    display: block;
+    padding: 1em;
+    flex: 1;
+    color: var(--primary);
+    background: var(--secondary);
 }
 
 table {
