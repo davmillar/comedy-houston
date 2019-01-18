@@ -71,7 +71,7 @@ tr {
 }
 
 th, td {
-  padding: .3rem 1rem .8rem;
+  padding: .3rem .8rem;
   vertical-align: top;
   text-align: left;
 }
@@ -140,7 +140,7 @@ p {
 .info {
     display: block;
     background: rgba(0,0,0,0.3);
-    margin: -.3rem -1rem .3rem;
+    margin: -.3rem -.8rem .3rem;
     font-size: .8em;
     padding: .5em;
     color: inherit;
