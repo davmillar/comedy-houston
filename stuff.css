@@ -17,16 +17,9 @@
     --border-color: rgba(255,255,255,.2);
 }
 
-html {
-    background: var(--primary);
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    color: #fff;
-    height: 100%;
-    overflow: hidden;
-}
-
 body {
+    background: var(--primary);
+    color: #fff;
     text-align: center;
     font-family: sans-serif;
     font-size: 12px;
@@ -52,12 +45,11 @@ footer a {
 
 section {
     background: rgba(0, 0, 0, .3);
-    border: .1em solid rgba(0,0,0,.5);
     border-radius: .5em;
     margin: 1em auto;
     max-width: 50em;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -71,7 +63,7 @@ tr {
 }
 
 th, td {
-  padding: .3rem .8rem;
+  padding: .3rem .8rem .8rem;
   vertical-align: top;
   text-align: left;
 }
