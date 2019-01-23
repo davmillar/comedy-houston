@@ -2,6 +2,9 @@
     --primary: #013;
     --secondary: #fff;
     --border-color: rgba(255,255,255,.2);
+    --color-dal: #259;
+    --color-fw: #842;
+    --color-den: #284;
 }
 
 body {
@@ -51,23 +54,31 @@ tr {
 }
 
 th, td {
-  padding: .3rem .8rem .8rem;
-  vertical-align: top;
-  text-align: left;
+    font-size: 0.9em;
+    padding: .3rem .8rem .8rem;
+    vertical-align: top;
+    text-align: left;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 td {
-    border-top: .1rem dashed var(--border-color);
+    color: rgba(255,255,255,0.7);
 }
 
-th.dal { color: #248; }
-td.dal { background: #248; }
 
-th.fw { color: #842; }
-td.fw { background: #842; }
+th.dal { color: var(--color-dal); }
+td.dal { background: var(--color-dal); }
+td.dal-signup { border: .1rem dashed var(--color-dal); }
 
-th.den{ color: #284; }
-td.den { background: #284; }
+th.fw { color: var(--color-fw); }
+td.fw { background: var(--color-fw); }
+td.fw-signup { border: .1rem dashed var(--color-fw); }
+
+th.den{ color: var(--color-den); }
+td.den { background: var(--color-den); }
+td.den-signup { border: .1rem dashed var(--color-den); }
 
 td:first-child,
 th:first-child {
@@ -89,17 +100,16 @@ td:first-child em {
 }
 
 td:not(:empty):not(:first-child) {
-    color: #fff;
-    border: 0;
     border-radius: .5rem;
 }
 
 td:empty, td:first-child {
     background: transparent;
+    border-top: .1rem dashed var(--border-color);
 }
 
 a {
-    color: inherit;
+    color: #fff;
     text-decoration: none;
     font-weight: 700;
 }
