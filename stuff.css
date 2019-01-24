@@ -83,8 +83,10 @@ th, td {
 
 h2 {
     font-size: 1.5em;
-    margin: 2rem 1rem 0;
-    padding: 0;
+    margin: 2rem auto 0;
+    max-width: 50rem;
+    width: 100%;
+    padding: 0 1rem;
     text-align: left;
 }
 
