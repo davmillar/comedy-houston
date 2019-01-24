@@ -10,11 +10,28 @@
 body {
     background: var(--primary);
     color: #fff;
-    text-align: center;
     font-family: sans-serif;
     font-size: 12px;
-    padding-bottom: 3.5em;
+    padding: 3.5rem 0;
     overflow-x: hidden;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.5em;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    z-index: 10;
 }
 
 footer {
@@ -25,6 +42,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 footer a {
@@ -42,11 +60,12 @@ section {
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    z-index: 0;
 }
 
 table {
-  margin: 1rem;
-  max-width: 50rem;
+    margin: 1rem;
+    max-width: 50rem;
 }
 
 tr {
@@ -54,19 +73,28 @@ tr {
 }
 
 th, td {
+    line-height: 1.4em;
     font-size: 0.9em;
     padding: .3rem .8rem .8rem;
     vertical-align: top;
     text-align: left;
-    line-height: 1.4em;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 2rem 1rem 0;
+    padding: 0;
+    text-align: left;
 }
 
 td {
     color: rgba(255,255,255,0.7);
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: translate3d(0,0,0);
+    z-index: -1;
 }
-
 
 th.dal { color: var(--color-dal); }
 td.dal { background: var(--color-dal); }
@@ -101,6 +129,7 @@ td:first-child em {
 
 td:not(:empty):not(:first-child) {
     border-radius: .5rem;
+    letter-spacing: 0.1em;
 }
 
 td:empty, td:first-child {
@@ -114,8 +143,27 @@ a {
     font-weight: 700;
 }
 
+td a {
+    position: static;
+}
+
+td a:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    opacity: 0;
+}
+
 p {
-    line-height: 1.8;
+    text-align: left;
+    line-height: 1.7em;
+    font-size: .9em;
+    margin: 1rem;
+    padding: 0;
 }
 
 .light {
