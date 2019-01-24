@@ -94,7 +94,6 @@ td {
     overflow: hidden;
     position: relative;
     -webkit-transform: translate3d(0,0,0);
-    z-index: -1;
 }
 
 th.dal { color: var(--color-dal); }
@@ -148,7 +147,7 @@ td a {
     position: static;
 }
 
-td a:before {
+td a:after {
     position: absolute;
     display: block;
     top: 0;
@@ -156,7 +155,6 @@ td a:before {
     right: 0;
     bottom: 0;
     content: "";
-    opacity: 0;
 }
 
 p {
