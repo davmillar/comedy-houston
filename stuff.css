@@ -94,6 +94,7 @@ td {
     overflow: hidden;
     position: relative;
     -webkit-transform: translate3d(0,0,0);
+    max-width: 15em;
 }
 
 th.dal { color: var(--color-dal); }
