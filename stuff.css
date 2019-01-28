@@ -83,10 +83,18 @@ th, td {
 }
 
 h2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.8);
     font-size: 1.5em;
     margin: 2rem auto 0;
-    padding: 0 1rem;
+    padding: 1rem;
     text-align: left;
+    z-index: 15;
+    border-radius: .5rem;
 }
 
 td {
