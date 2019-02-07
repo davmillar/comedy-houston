@@ -44,7 +44,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 20;
     text-align: center;
 }
 
@@ -62,6 +62,16 @@ section {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     z-index: 0;
+    display: block;
+}
+
+section::before {
+    content: " ";
+    display: block;
+    margin-top: -4rem;
+    height: 4rem;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 table {
