@@ -14,7 +14,7 @@ body {
     font-size: 12px;
     max-width: 70em;
     margin: 0 auto;
-    padding: 3.5em 1em;
+    padding: 4em 1em;
     overflow-x: hidden;
 }
 
@@ -34,6 +34,7 @@ h1 {
     margin: 0;
     padding: 1rem;
     z-index: 10;
+    line-height: 1.5rem;
 }
 
 footer {
@@ -46,6 +47,7 @@ footer {
     right: 0;
     z-index: 20;
     text-align: center;
+    line-height: 1.5rem;
 }
 
 footer a {
@@ -105,6 +107,7 @@ h2 {
     text-align: left;
     z-index: 15;
     border-radius: .5rem;
+    line-height: 1.5rem;
 }
 
 td {
