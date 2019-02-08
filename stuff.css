@@ -134,11 +134,16 @@ td:first-child,
 th:first-child {
   white-space: nowrap;
   font-size: 2em;
-  padding-left: 0;
   width: 1.3em;
   text-align: left;
   line-height: 1;
   border-width: .1rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0rem;
+  /*background: rgba(0,0,0,0.5) !important;*/
+  z-index: 5;
+  text-shadow: 0 .1rem .2rem #000, 0 .1rem .5rem #000, 0 .1rem 1rem #000;
 }
 
 td:first-child em {
