@@ -64,7 +64,7 @@ if ('serviceWorker' in navigator) {
             let latLng = links[i].href.substring(4);
             let address = links[i].dataset.address;
             if (userAgent.match(/iPad|iPhone|iPod/ig)) {
-                links[i].href = 'maps:?q=' + address;
+                links[i].href = 'http://maps.apple.com/?q=' + links[i].textContent + '&sll=' + latLng;
             } else if (userAgent.match(/android/ig)) {
                 links[i].href = links[i].href + '?q=' + latLng + '(' + address + ')';
             } else {
