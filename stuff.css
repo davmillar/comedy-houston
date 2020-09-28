@@ -5,6 +5,7 @@
     --color-dal: #259;
     --color-fw: #842;
     --color-den: #284;
+    --color-ol: #a22;
 }
 
 body {
@@ -130,6 +131,10 @@ th.den{ color: var(--color-den); }
 td.den { background: var(--color-den); }
 td.den-signup { border: .1rem dashed var(--color-den); }
 
+th.ol{ color: var(--color-ol); }
+td.ol { background: var(--color-ol); }
+td.ol-signup { border: .1rem dashed var(--color-ol); }
+
 td:first-child,
 th:first-child {
   white-space: nowrap;
@@ -187,7 +192,6 @@ td a:after {
 p {
     text-align: left;
     line-height: 1.7em;
-    font-size: .9em;
     margin: 1rem;
     padding: 0;
 }
