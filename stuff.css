@@ -17,6 +17,8 @@ body {
     margin: 0 auto;
     padding: 4em 1em;
     overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 .center {
@@ -93,6 +95,8 @@ th, td {
     vertical-align: top;
     text-align: left;
     text-transform: uppercase;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 h2 {
@@ -192,6 +196,7 @@ td a:after {
 p {
     text-align: left;
     line-height: 1.7em;
+    font-size: 0.9em;
     margin: 1rem;
     padding: 0;
 }
