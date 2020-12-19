@@ -45,9 +45,7 @@
     --primary: #013;
     --secondary: #fff;
     --border-color: rgba(255,255,255,.2);
-    --color-dal: #259;
-    --color-fw: #842;
-    --color-den: #284;
+    --color-htx: #842;
     --color-ol: #a22;
 }
 
@@ -166,17 +164,9 @@ td {
     max-width: 15em;
 }
 
-th.dal { color: var(--color-dal); }
-td.dal { background: var(--color-dal); }
-td.dal-signup { border: .1rem dashed var(--color-dal); }
-
-th.fw { color: var(--color-fw); }
-td.fw { background: var(--color-fw); }
-td.fw-signup { border: .1rem dashed var(--color-fw); }
-
-th.den{ color: var(--color-den); }
-td.den { background: var(--color-den); }
-td.den-signup { border: .1rem dashed var(--color-den); }
+th.htx { color: var(--color-htx); }
+td.htx { background: var(--color-htx); }
+td.htx-signup { border: .1rem dashed var(--color-htx); }
 
 th.ol{ color: var(--color-ol); }
 td.ol { background: var(--color-ol); }
