@@ -42,10 +42,10 @@
 
 
 :root {
-    --primary: #013;
+    --primary: #222;
     --secondary: #fff;
     --border-color: rgba(255,255,255,.2);
-    --color-htx: #842;
+    --color-htx: #a70;
     --color-ol: #a22;
 }
 
