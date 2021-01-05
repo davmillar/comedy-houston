@@ -1,6 +1,6 @@
 // jshint esversion:6
 var me = self,
-    CACHE_NAME = 'houstonv1.21',
+    CACHE_NAME = 'houstonv1.22',
     urlsToCache = [
         '/',
         '/?utm_source=web_app_manifest',
